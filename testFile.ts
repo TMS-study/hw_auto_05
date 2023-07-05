@@ -1,4 +1,4 @@
-import Calc from "./hw_04";
+import Calc from "./calculate";
 
 
 export default class Tests {
