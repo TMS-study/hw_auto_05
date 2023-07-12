@@ -36,24 +36,22 @@ describe('Subtraction tests', function () {
         num = new Calc(50, 0, '-');
         result1 = num.doSubtraction();
         expectedResult = 50;
+        expect(result1).toBe(expectedResult);
     });
 
     it('testSubTwo', function () {
         num = new Calc(-2, -42, '-');
         result1 = num.doSubtraction();
         expectedResult = 40;
+        expect(result1).toBe(expectedResult);
     });
 
     it('testSubThree', function () {
         num = new Calc(20, 40, '-');
         result1 = num.doSubtraction();
         expectedResult = -20;
-
-    });
-
-    afterEach(() => {
         expect(result1).toBe(expectedResult);
-    })
+    });
 });
 
 describe('Multiplication tests', function () {
@@ -62,23 +60,22 @@ describe('Multiplication tests', function () {
         num = new Calc(502, 0, '*');
         result1 = num.doMultiplication();
         expectedResult = 0;
+        expect(result1).toEqual(expectedResult);
     });
 
     it('testMultyTwo', function () {
         num = new Calc(2, 305, '*');
         result1 = num.doMultiplication();
         expectedResult = 610;
+        expect(result1).toEqual(expectedResult);
     });
 
     it('testMultyThree', function () {
         num = new Calc(-2, 2.05, '*');
         result1 = num.doMultiplication();
         expectedResult = -4.1;
-    });
-
-    afterEach(() => {
         expect(result1).toEqual(expectedResult);
-    })
+    });
 
 });
 
@@ -88,23 +85,22 @@ describe('Didide tests', function () {
         num = new Calc(99, 33, '/');
         result1 = num.doDidide();
         expectedResult = 3;
+        expect(result1).toBe(expectedResult);
     });
 
     it('testDidTwo', function () {
         num = new Calc(0, 2, '/');
         result1 = num.doDidide();
         expectedResult = 0;
+        expect(result1).toBe(expectedResult);
     });
 
     it('testDidThree', function () {
         num = new Calc(2, -1, '/');
         result1 = num.doDidide();
         expectedResult = -2;
-    });
-
-    afterEach(() => {
         expect(result1).toBe(expectedResult);
-    })
+    });
 
 });
 

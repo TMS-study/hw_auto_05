@@ -38,24 +38,23 @@ describe('Subtraction tests', function () {
         num = new Calc(5, 0, '-');
         result1 = num.doSubtraction();
         expectedResult = 5;
+        assert.equal(result1, expectedResult);
     });
 
     it('testSubTwo', function () {
         num = new Calc(2, 1.5, '-');
         result1 = num.doSubtraction();
         expectedResult = 0.5;
+        assert.equal(result1, expectedResult);
     });
 
     it('testSubThree', function () {
         num = new Calc(2, 4, '-');
         result1 = num.doSubtraction();
         expectedResult = -2;
-
+        assert.equal(result1, expectedResult);
     });
 
-    afterEach(() => {
-        assert.equal(result1, expectedResult);
-    })
 });
 
 describe('Multiplication tests', function () {
@@ -64,23 +63,22 @@ describe('Multiplication tests', function () {
         num = new Calc(5, 0, '*');
         result1 = num.doMultiplication();
         expectedResult = 0;
+        assert.equal(result1, expectedResult);
     });
 
     it('testMultyTwo', function () {
         num = new Calc(2, 2**3, '*');
         result1 = num.doMultiplication();
         expectedResult = 16;
+        assert.equal(result1, expectedResult);
     });
 
     it('testMultyThree', function () {
         num = new Calc(2, 2, '*');
         result1 = num.doMultiplication();
         expectedResult = 4;
-    });
-
-    afterEach(() => {
         assert.equal(result1, expectedResult);
-    })
+    });
 
 });
 
@@ -90,23 +88,22 @@ describe('Didide tests', function () {
         num = new Calc(9, 3, '/');
         result1 = num.doDidide();
         expectedResult = 3;
+        assert.equal(result1, expectedResult);
     });
 
     it('testDidTwo', function () {
         num = new Calc(2, 0, '/');
         result1 = num.doDidide();
         expectedResult = Infinity;
+        assert.equal(result1, expectedResult);
     });
 
     it('testDidThree', function () {
         num = new Calc(2, 0.555, '/');
         result1 = num.doDidide();
         expectedResult = 3.603603603603603;
-    });
-
-    afterEach(() => {
         assert.equal(result1, expectedResult);
-    })
+    });
 
 });
 
