@@ -102,4 +102,5 @@ describe('Didide tests', function () {
         expectedResult = 3.603603603603603;
         expectedResult.should.equal(result1);
     });
+    
 });
